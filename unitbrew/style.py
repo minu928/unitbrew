@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class AtomicUnit:
+class FrameUnit:
     coords: str = None
     atoms: str = None
     energy: str = None
@@ -18,7 +18,7 @@ class AtomicUnit:
             setattr(self, k, str(v))
 
 
-metal = AtomicUnit(
+metal = FrameUnit(
     energy="eV",
     coords="angstrom",
     force="eV/angstrom",
