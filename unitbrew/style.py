@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 @dataclass
 class FrameUnit:
-    coords: str = None
+    coord: str = None
     atoms: str = None
     energy: str = None
     stress: str = None
@@ -20,7 +20,7 @@ class FrameUnit:
 
 metal = FrameUnit(
     energy="eV",
-    coords="angstrom",
+    coord="angstrom",
     force="eV/angstrom",
     stress="eV/angstrom^3",
     box="angstrom",
